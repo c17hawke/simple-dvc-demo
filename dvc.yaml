@@ -16,3 +16,15 @@ stages:
     outs:
     - data/processed/train_winequality.csv
     - data/processed/test_winequality.csv 
+
+  train_and_evaluate:
+    cmd: python src/train_and_evaluate.py --config=params.yaml
+    deps:
+    - data/processed/train_winequality.csv
+    - data/processed/test_winequality.csv 
+    - src/train_and_evaluate.py
+    params:
+    - estimators.ElasticNet.params.alpha
+    - estimators.ElasticNet.params.l1_ratio
+    outs:
+    - saved_models/model.joblib
