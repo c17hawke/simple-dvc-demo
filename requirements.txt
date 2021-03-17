@@ -1,3 +1,4 @@
 dvc
 dvc[gdrive]
 sklearn
+pandas
