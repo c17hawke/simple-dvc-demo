@@ -1,0 +1,58 @@
+action: GLOB, msg: packaging
+cwd: /home/c17hawke/Desktop/MLOPS/DEMO/new/simple_app
+cmd: /home/c17hawke/anaconda3/envs/wineq/bin/python setup.py sdist --formats=zip --dist-dir /home/c17hawke/Desktop/MLOPS/DEMO/new/simple_app/.tox/dist
+running sdist
+running egg_info
+writing src.egg-info/PKG-INFO
+writing dependency_links to src.egg-info/dependency_links.txt
+writing top-level names to src.egg-info/top_level.txt
+reading manifest file 'src.egg-info/SOURCES.txt'
+writing manifest file 'src.egg-info/SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
+
+creating src-0.0.1
+creating src-0.0.1/src
+creating src-0.0.1/src.egg-info
+creating src-0.0.1/tests
+copying files to src-0.0.1...
+copying README.md -> src-0.0.1
+copying setup.py -> src-0.0.1
+copying src/__init__.py -> src-0.0.1/src
+copying src/get_data.py -> src-0.0.1/src
+copying src/load_data.py -> src-0.0.1/src
+copying src/split_data.py -> src-0.0.1/src
+copying src/train_and_evaluate.py -> src-0.0.1/src
+copying src.egg-info/PKG-INFO -> src-0.0.1/src.egg-info
+copying src.egg-info/SOURCES.txt -> src-0.0.1/src.egg-info
+copying src.egg-info/dependency_links.txt -> src-0.0.1/src.egg-info
+copying src.egg-info/top_level.txt -> src-0.0.1/src.egg-info
+copying tests/__init__.py -> src-0.0.1/tests
+copying tests/conftest.py -> src-0.0.1/tests
+copying tests/test_config.py -> src-0.0.1/tests
+Writing src-0.0.1/setup.cfg
+creating /home/c17hawke/Desktop/MLOPS/DEMO/new/simple_app/.tox/dist
+creating '/home/c17hawke/Desktop/MLOPS/DEMO/new/simple_app/.tox/dist/src-0.0.1.zip' and adding 'src-0.0.1' to it
+adding 'src-0.0.1'
+adding 'src-0.0.1/src'
+adding 'src-0.0.1/tests'
+adding 'src-0.0.1/src.egg-info'
+adding 'src-0.0.1/setup.py'
+adding 'src-0.0.1/PKG-INFO'
+adding 'src-0.0.1/setup.cfg'
+adding 'src-0.0.1/README.md'
+adding 'src-0.0.1/src/train_and_evaluate.py'
+adding 'src-0.0.1/src/load_data.py'
+adding 'src-0.0.1/src/__init__.py'
+adding 'src-0.0.1/src/get_data.py'
+adding 'src-0.0.1/src/split_data.py'
+adding 'src-0.0.1/tests/conftest.py'
+adding 'src-0.0.1/tests/test_config.py'
+adding 'src-0.0.1/tests/__init__.py'
+adding 'src-0.0.1/src.egg-info/top_level.txt'
+adding 'src-0.0.1/src.egg-info/SOURCES.txt'
+adding 'src-0.0.1/src.egg-info/PKG-INFO'
+adding 'src-0.0.1/src.egg-info/dependency_links.txt'
+removing 'src-0.0.1' (and everything under it)
