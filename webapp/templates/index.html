@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}
+WineQuality
+{% endblock title %}
+
+
+{% block custom_css %}
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock custom_css %}
+
+
+{% block body %}
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="/">WineQualityPrediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/c17hawke/simple-dvc-demo">source code</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div>
+    <!-- nav bar ends -->
+
+    <div class="container-fluid masthead">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form method="POST">
+                        <!-- Input block-->
+                        <div class="form-group">
+                            <label for="translation">
+                                <blockquote class="blockquote">
+                                    <p class="mb-2">Enter the details as indicated:</p>
+                                </blockquote>
+                            </label>
+                            <textarea class="form-control" name="fixed_acidity" rows="1"
+                                placeholder="fixed acidity"></textarea>
+                            <textarea class="form-control" name="volatile_acidity" rows="1"
+                                placeholder="volatile acidity"></textarea>
+                            <textarea class="form-control" name="citric_acid" rows="1"
+                                placeholder="citric acid"></textarea>
+                            <textarea class="form-control" name="residual_sugar" rows="1"
+                                placeholder="residual sugar"></textarea>
+                            <textarea class="form-control" name="chlorides" rows="1" placeholder="chlorides"></textarea>
+                            <textarea class="form-control" name="free_sulfur_dioxide" rows="1"
+                                placeholder="free sulfur dioxide"></textarea>
+                            <textarea class="form-control" name="total_sulfur_dioxide" rows="1"
+                                placeholder="total sulfur dioxide"></textarea>
+                            <textarea class="form-control" name="density" rows="1" placeholder="density"></textarea>
+                            <textarea class="form-control" name="pH" rows="1" placeholder="pH"></textarea>
+                            <textarea class="form-control" name="sulphates" rows="1" placeholder="sulphates"></textarea>
+                            <textarea class="form-control" name="alcohol" rows="1" placeholder="alcohol"></textarea>
+
+                        </div>
+
+                        <!-- Select output language here. -->
+                        <div class="form-group">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Predict</button></br>
+                        </br>
+                    </form>
+                    <!-- Translated text returned by the Translate API is rendered here. -->
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="translation-result">
+
+                                <blockquote class="blockquote">
+                                    <p class="mb-2">Prediction:</p>
+                                </blockquote>
+
+                            </label>
+                            <textarea readonly class="form-control" id="exTextarea" rows="5">{{ response }}</textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% endblock body %}
+
+        {% block custom_js %}
+        <!-- Custom JS -->
+        <script src="{{ url_for('static', filename='script/index.js') }}"></script>
+        {% endblock custom_js %}
