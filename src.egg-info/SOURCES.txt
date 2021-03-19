@@ -1,8 +1,11 @@
 README.md
 setup.py
+prediction_service/__init__.py
+prediction_service/prediction.py
 src/__init__.py
 src/get_data.py
 src/load_data.py
+src/log_production_model.py
 src/split_data.py
 src/train_and_evaluate.py
 src.egg-info/PKG-INFO
