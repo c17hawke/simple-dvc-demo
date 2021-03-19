@@ -82,4 +82,3 @@ def api_response(dict_request):
         response = {"the_exected_range": get_schema(), "response": str(e) }
         return response
 
-#
