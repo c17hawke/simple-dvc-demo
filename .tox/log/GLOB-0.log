@@ -14,15 +14,19 @@ warning: check: missing required meta-data: url
 warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
 
 creating src-0.0.1
+creating src-0.0.1/prediction_service
 creating src-0.0.1/src
 creating src-0.0.1/src.egg-info
 creating src-0.0.1/tests
 copying files to src-0.0.1...
 copying README.md -> src-0.0.1
 copying setup.py -> src-0.0.1
+copying prediction_service/__init__.py -> src-0.0.1/prediction_service
+copying prediction_service/prediction.py -> src-0.0.1/prediction_service
 copying src/__init__.py -> src-0.0.1/src
 copying src/get_data.py -> src-0.0.1/src
 copying src/load_data.py -> src-0.0.1/src
+copying src/log_production_model.py -> src-0.0.1/src
 copying src/split_data.py -> src-0.0.1/src
 copying src/train_and_evaluate.py -> src-0.0.1/src
 copying src.egg-info/PKG-INFO -> src-0.0.1/src.egg-info
@@ -36,6 +40,7 @@ Writing src-0.0.1/setup.cfg
 creating '.tox/dist/src-0.0.1.zip' and adding 'src-0.0.1' to it
 adding 'src-0.0.1'
 adding 'src-0.0.1/src'
+adding 'src-0.0.1/prediction_service'
 adding 'src-0.0.1/tests'
 adding 'src-0.0.1/src.egg-info'
 adding 'src-0.0.1/setup.py'
@@ -46,7 +51,10 @@ adding 'src-0.0.1/src/train_and_evaluate.py'
 adding 'src-0.0.1/src/load_data.py'
 adding 'src-0.0.1/src/__init__.py'
 adding 'src-0.0.1/src/get_data.py'
+adding 'src-0.0.1/src/log_production_model.py'
 adding 'src-0.0.1/src/split_data.py'
+adding 'src-0.0.1/prediction_service/prediction.py'
+adding 'src-0.0.1/prediction_service/__init__.py'
 adding 'src-0.0.1/tests/conftest.py'
 adding 'src-0.0.1/tests/test_config.py'
 adding 'src-0.0.1/tests/__init__.py'
