@@ -1,5 +1,12 @@
 create env 
 
+simple-dvc-demo-main:
+Its end to end MLOPS project by krish. It has used Git,DVC, MLOPS and testing via pytest and tox Etc.
+It has proper folder structure with dvc config and params to control the project
+In Git we have 2 barnch,main and main-mlflow sub branch
+all Git,DVC,pytest and tox related stuff in main branch, it does auto deployment in heroku, once we refresh main branch
+All Mlflow related  stuff in  main-mlflow sub branch, it does auto deployment in heroku, once we refresh main-mlflow branch
+
 ```bash
 conda create -n wineq python=3.7 -y
 ```
