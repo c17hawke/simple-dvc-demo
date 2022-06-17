@@ -23,7 +23,7 @@ def log_production_model(config_path):
     mlflow.set_tracking_uri(remote_server_uri)
     
     
-    runs = mlflow.search_runs(experiment_ids=1)
+    runs = mlflow.search_runs(experiment_ids=[1])
     lowest = runs["metrics.mae"].sort_values(ascending=True)[0]
     lowest_run_id = runs[runs["metrics.mae"] == lowest]["run_id"][0]
     
